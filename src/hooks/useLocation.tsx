@@ -26,7 +26,11 @@ export default (callback: (location: GeolocationResponse) => void, isFocused: bo
                 callback,
                 (err) => {
                     console.log(err);
-                });
+                }, {
+                enableHighAccuracy: true,
+                timeout: 20000,
+                maximumAge: 1000
+            });
         };
 
         if (isFocused) {

@@ -8,7 +8,7 @@ const Map = () => {
     const { currentLocation, locations } = useLocationContext();
 
     if (!currentLocation) {
-        return <ActivityIndicator size="large" style={{ marginTop: 200 }} />;
+        return <ActivityIndicator size="large" style={{ marginTop: 200 }} color="#00ff00" />;
     }
 
     return (
